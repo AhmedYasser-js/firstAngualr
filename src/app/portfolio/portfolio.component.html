@@ -1,0 +1,30 @@
+<section class="my-4 text-center">
+  <h1>PORTFOLIO COMPONENT</h1>
+  <div class="horizontal-lines my-2">
+    <div class="line"></div>
+    <div class="star-icon">★</div>
+    <div class="line"></div>
+  </div>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-md-4" *ngFor="let img of imgs">
+        <div class="item">
+          <img [src]="img" alt="" srcset="" class="w-100 rounded">
+          <div class="img-caption rounded" (click)="appearLightbox(img)">
+            <i class="fa-regular fa-image"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="lightBox" class="light-box" [ngClass]="{'d-none': dneno}" (click)="toggleLightbox()">
+      <div id="boxData" class="box-data">
+        <!-- Add content for your lightbox here -->
+        <img [src]="lightboxImage" alt="" srcset="" class="w-100">
+      </div>
+    </div>
+
+
+  </div>
+
+</section>

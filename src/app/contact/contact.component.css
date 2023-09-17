@@ -1,0 +1,31 @@
+h1 {
+  color: #1b3449;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.horizontal-lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.line {
+  height: 4px;
+  width: 9%;
+  border-radius: 2px;
+  background-color: #1b3449;
+}
+
+
+.star-icon {
+  font-size: 26px;
+  margin: 0 10px;
+  color: #1b3449;
+}
+
+
+label {
+  color: #1abc9c;
+}

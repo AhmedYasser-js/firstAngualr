@@ -1,0 +1,33 @@
+<section>
+
+  <header class="text-center mt-5">
+
+    <h1>ABOUT COMPONENT</h1>
+    <div class="horizontal-lines my-2">
+      <div class="line"></div>
+      <div class="star-icon">★</div>
+      <div class="line"></div>
+    </div>
+  </header>
+  <form class="w-50 p-3 mx-auto mt-5 ng-valid ng-touched ng-dirty ng-submitted">
+    <label for="userName" class="position-relative top-0 mb-2" [class.invisible]="userName === ''">userName :</label>
+    <input id="userName" type="text" placeholder="userName" name="userName"
+      class="form-control border-0 border-bottom py-3 position-relative mb-3" [(ngModel)]="userName">
+
+    <label for="userAge" class="position-relative top-0 mb-2" [class.invisible]="userAge === ''">userAge :</label>
+    <input id="userAge" type="text" placeholder="userAge" name="userAge"
+      class="form-control border-0 border-bottom py-3 position-relative mb-3" [(ngModel)]="userAge">
+
+    <label for="userEmail" class="position-relative top-0 mb-2" [class.invisible]="userEmail === ''">userEmail :</label>
+    <input id="userEmail" type="text" placeholder="userEmail" name="userEmail"
+      class="form-control border-0 border-bottom py-3 position-relative mb-3" [(ngModel)]="userEmail">
+
+    <label for="userPassword" class="position-relative top-0 mb-2" [class.invisible]="userPassword === ''">userPassword
+      :</label>
+    <input id="userPassword" type="text" placeholder="userPassword" name="userPassword"
+      class="form-control border-0 border-bottom py-3 position-relative mb-3" [(ngModel)]="userPassword">
+
+    <button class="btn mt-4 text-white mb-4" style="background-color: #1abc9c;"> send Message </button>
+  </form>
+
+</section>

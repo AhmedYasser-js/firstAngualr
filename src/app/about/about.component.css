@@ -1,0 +1,28 @@
+.horizontal-lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.line {
+  height: 4px;
+  width: 9%;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.star-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.bg-first-task {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+section {
+  padding-block: 200px;
+}
